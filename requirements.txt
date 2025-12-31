@@ -1,0 +1,6 @@
+Building requirements...
+Resolving dependencies...
+Success!
+Django==6.0
+gunicorn==23.0.0
+django-tastypie==0.15.1

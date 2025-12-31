@@ -2,5 +2,5 @@ services:
   - type: web                # This tells Render you're deploying a web service
     name: T     # The name of your service (you’ll see this in the Render dashboard)
     env: python              # Specifies Python as the runtime environment
-    buildCommand: pipen install -r requirements.txt   # Render installs all dependencies listed in requirements.txt
-    startCommand: gunicorn myproject.wsgi:application  # Render starts your app using Gunicorn
+    buildCommand: pipenv install -r requirements.txt   # Render installs all dependencies listed in requirements.txt
+    startCommand: gunicorn T.wsgi:application  # Render starts your app using Gunicorn
